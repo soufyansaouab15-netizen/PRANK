@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photo Bot</title>
+<style>
+body {
+  margin: 0;
+  background: #111827;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.box {
+  width: 85%;
+  max-width: 420px;
+  background: #1f2937;
+  padding: 25px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 10px 30px #0008;
+}
+button {
+  background: #229ED9;
+  color: white;
+  border: 0;
+  padding: 14px 25px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+#result {
+  display: none;
+  margin-top: 20px;
+  font-size: 24px;
+}
+.small {
+  color: #9ca3af;
+  font-size: 13px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+  <h2>📸 Фото готово!</h2>
+
+  <p>
+    Ваша фотография готова к просмотру.
+  </p>
+
+  <p class="small">
+    Нажмите кнопку ниже, чтобы открыть фотографию.
+  </p>
+
+  <button onclick="prank()">Открыть фото</button>
+
+  <div id="result">
+    😂😂😂<br>
+    <b>ТЕБЯ ПОДКОЛОЛИ!</b><br><br>
+    Это был просто PRANK 😎
+  </div>
+</div>
+
+<script>
+function prank() {
+  document.querySelector("button").style.display = "none";
+  document.querySelector("#result").style.display = "block";
+}
+</script>
+
+</body>
+</html>s
